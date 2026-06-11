@@ -19,3 +19,33 @@ class Node
 };
 
 class BinaryTree
+{
+    public:
+    Node *ROOT;
+
+    BinaryTree()
+    {
+        ROOT = NULL; // initializing ROOT to NULL
+    
+    }
+
+    // Insert a node in he binary search tree 
+    void insert(string element)
+    {
+
+        Node *newNode = new Node(element, NULL, NULL);
+
+        newNode->info = element;
+        newNode->leftcild = NULL;
+        newNode->rightchild = NULL;
+
+        Node *parent = NULL;
+
+    }
+}
+
+
+
+
+
+
