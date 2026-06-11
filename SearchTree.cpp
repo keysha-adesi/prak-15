@@ -44,8 +44,25 @@ class BinaryTree
 
         search(element, parent, currentNode);
 
+        if (parent == NULL)
+        {
+            ROOT = newNode;
+            return;
+        }
+
+        if (element < parent->info)
+        {
+            parent->leftcild = newNode;
+        }
+        else if (element > parent->info)
+        {
+            parent->rightchild = newNode;
+        }
 
     }
+
+    // Thi function searches the current node of the specified node
+    //as well as the current node of its parent
 }
 
 
